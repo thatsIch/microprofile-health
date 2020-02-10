@@ -21,6 +21,9 @@
  */
 package org.eclipse.microprofile.health;
 
+import org.eclipse.microprofile.health.Liveness;
+import org.eclipse.microprofile.health.Readiness;
+
 import javax.inject.Qualifier;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
@@ -28,7 +31,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * Created by hbraun on 24.08.17.
- * @deprecated in version 2.0 of the spec.
+ * @deprecated in version 2.0 of the spec. Replace with either {@link Liveness} or {@link Readiness}.
  */
 @Qualifier
 @Documented
